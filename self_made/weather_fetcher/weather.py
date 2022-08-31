@@ -1,4 +1,6 @@
 import requests
+
+#   from weather import y_or_no, fooling around with imports
 import time
 
 API_KEY = "enter_api_key_from_https://home.openweathermap.org/api_keys" # Enter your API-key inside the quotes
