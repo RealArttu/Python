@@ -63,6 +63,6 @@ def which():
         print_humans()
     else:
         print("Not a valid option")
-        sys.exit()
+        return
 
 which()
