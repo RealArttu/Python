@@ -1,4 +1,5 @@
 from math import sqrt
+import sys
 
 
 def distance():
@@ -18,7 +19,7 @@ def distance():
     # Output the distance
     print(distance)
 
-#distance()
+
 
 # Celsius to fahrenheit converter
 def celsius_to_fahrenheit():
@@ -26,5 +27,43 @@ def celsius_to_fahrenheit():
     fahrenheit = celsius * 1.8 + 32 # Calculate fahrenheit
     print(f"{celsius}°C is {fahrenheit}°F") # Output the result
 
-celsius_to_fahrenheit()
 
+
+def print_humans():
+
+    head = " 0 "
+    body = "-+-"
+    legs = "/ \\"
+
+    user_input = int(input("How many people do you want to see? \nEnter amount: " )) # User input
+    if user_input > 15: # Validate that user input is 15 or less
+        print("Don't overcrowd the planet!")
+        sys.exit()
+
+
+    def print_body(part):
+        for x in range(user_input):
+            if x != user_input - 1:
+                print(part, end=" ")
+            else:
+                print(part)
+
+    print_body(head)
+    print_body(body)
+    print_body(legs)
+
+
+
+def which():
+    selection = input("Which one do you want to activate?\nType calc to open the point to point calculator\nType temp to open the celsius to fahrenheit converter\nType people to print x amount of people\nChoose: ").lower()
+    if selection == "calc":
+        distance()
+    elif selection == "temp":
+        celsius_to_fahrenheit()
+    elif selection == "people":
+        print_humans()
+    else:
+        print("Not a valid option")
+        sys.exit()
+
+which()
