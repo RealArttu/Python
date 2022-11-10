@@ -1,5 +1,4 @@
 from math import sqrt
-import sys
 
 
 def distance():
@@ -38,7 +37,7 @@ def print_humans():
     user_input = int(input("How many people do you want to see? \nEnter amount: " ))
     if user_input > 15: # Validate that user input is 15 or less
         print("Don't overcrowd the planet!")
-        sys.exit()
+        return
 
 
     def print_body(part):  # Print the user defined amount of humans
