@@ -18,16 +18,13 @@ def distance():
     # Output the distance
     print(distance)
 
-distance()
+#distance()
 
-# Code that doesn't work lol§
+# Celsius to fahrenheit converter
 def celsius_to_fahrenheit():
     celsius = int(input("Enter °C: ")) # User input celsius
-    fahrenheit = celsius/100 # First part to convert celsius to fahrenheit
-    result = fahrenheit - 32/180 # Second part to convert celsius to fahrenheit
-    print(f"{celsius}°C is {result}°F") # Output the result
+    fahrenheit = celsius * 1.8 + 32 # Calculate fahrenheit
+    print(f"{celsius}°C is {fahrenheit}°F") # Output the result
 
-#celsius_to_fahrenheit()
-
-
+celsius_to_fahrenheit()
 
