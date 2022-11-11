@@ -40,12 +40,17 @@ def print_humans():
         return
 
 
+#    def print_body(part):  # Print the user defined amount of humans
+#        for x in range(user_input):
+#            if x != user_input - 1:
+#                print(part, end=" ")
+#            else:
+#                print(part)
+
     def print_body(part):  # Print the user defined amount of humans
         for x in range(user_input):
-            if x != user_input - 1:
                 print(part, end=" ")
-            else:
-                print(part)
+        print()
 
     print_body(head)
     print_body(body)
